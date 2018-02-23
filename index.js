@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-import EmailNotification from "gmailNotification";
+import GmailNotification from "gmailNotification";
 import fs from "fs";
 
 var content = fs.readFileSync(process.env['HOME'] + "/.gmailNotification");
@@ -21,7 +21,7 @@ var stdin = process.openStdin();
 // the string that should alert and send out notification
 // note, it execute in a loop for every chunk of data we get.  so try to keep this small.
 
-let emailNotify = new EmailNotification(
+let emailNotify = new GmailNotification(
 	setting.to, 
 	setting.heading,
 	setting.from, 

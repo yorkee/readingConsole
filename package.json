@@ -1,5 +1,5 @@
 {
-  "name": "reading-console",
+  "name": "readingConsole",
   "version": "1.0.0",
   "description": "simple spike or reading whats on console ",
   "main": "index.js",
