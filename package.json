@@ -1,0 +1,29 @@
+{
+  "name": "reading-console",
+  "version": "1.0.0",
+  "description": "simple spike or reading whats on console ",
+  "main": "index.js",
+  "scripts": {
+    "e2etest": "node test.js | babel-node bin/index.js --presets es2015,stage-2",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js --presets es2015,stage-2",
+    "transpile": "babel index.js -d bin"
+  },
+  "bin": {
+    "consolemail": "bin/index.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "gmailnotification": "git+https://github.com/yorkee/gmailNotification.git",
+    "uglify-js": "^3.2.2"
+  },
+  "author": "Elvin Yeung",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
